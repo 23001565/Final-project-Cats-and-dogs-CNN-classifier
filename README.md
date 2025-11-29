@@ -2,16 +2,14 @@
 
 **📋 Project Information:**
 
-[This information should also be included in the PDF report and presentation slides.]
-
-* **📚 Course:** [Course Code] - Introduction to Artificial Intelligence  
-* **📅 Term:** [Term - Year] (e.g., Term 1 - 2025-2026)  
+* **📚 Course:** MAT3508 - Introduction to Artificial Intelligence  
+* **📅 Term:** Term 1 - 2025-2026 
 * **🏫 Institution:** VNU-HUS (Vietnam National University - Hanoi University of Science)  
-* **📝 Project Title:** [CNN for Cat–Dog Classification]  
+* **📝 Project Title:** CNN for Cat–Dog Classification  
 * **📅 Submission Date:** 30/11/2025  
 * **📄 PDF Report:** 📄 [Link to the PDF report in this repository]  
 * **🖥️ Presentation Slides:** 🖥️ [Link to the presentation slides in this repository]  
-* **📂 Repository:** 📁 Include code, data, and docs in this repo (or provide external links)
+* **📂 Repository:** https://drive.google.com/drive/folders/1eoQ2REdIvF-qhs9Ozx2E0LV29fD3ZTvc?usp=drive_link
 
 **👥 Team Members:**
 
@@ -47,10 +45,9 @@ This project addresses these challenges by exploring how techniques like SimCLR 
      + lightly module installed for SimCLR augmentation and loss function (NT-Xent),
      + loss function for KD is composed of multiple functions (CE, softmax, log_softmax, kl_div) from torch.nn.functional
    - Code structure:
-     1, Data split;
-     2, SimCLR pretraining and finetuning;
-     3, Finetune ResNet50(weights=IMAGENET_1K) + Distillation;
-     4, Test the students.
+     + SimCLR pretraining and finetuning;
+     + Finetune ResNet50(weights=IMAGENET_1K) + Distillation;
+     + Test the models.
 
 ### Chapter 3: Results & Analysis
 **📊 Results & Discussion**
@@ -70,33 +67,4 @@ This project addresses these challenges by exploring how techniques like SimCLR 
 
 
 ---
-
-## 📝 Submission Guidelines
-
-### 📋 Requirements
-- **Format:** 
-  + 🖨️ The report must be typed and clearly formatted, exported as a PDF (recommended to use LaTeX).  
-  + 🔁 A copy of the report must be stored in the GitHub repository corresponding to the project, two submitted on Canvas (one for the instructor and one for the TA (if any)), and two printed copies (one for the instructor and one for the TA (if any)). The same for presentation slides (no printed copies required).
-- **Repository:** 🗂️ Include PDF report, slides, and all relevant code and materials. (If the size exceeds GitHub's limit, consider uploading to other platforms like Google Drive or Dropbox and put the link to the documentation)
-- **Team Work:** 🤝 Ensure to acknowledge contributions from all team members
-- **Code Documentation:** All code must be well-documented with:
-  + 🧾 Clear comments explaining complex logic and algorithms  
-  + 🧪 Function/method docstrings describing parameters, return values, and purpose  
-  + 📘 README files for code modules explaining setup and usage  
-  + 📝 Inline comments for non-obvious code sections
-
-### ✅ Checklist Before Submission
-- [X] ✅ Put X in the brackets to mark as complete  
-- [ ] ✍️ Fill out all sections in this README template  
-- [ ] 📄 Complete detailed PDF report following the structure above  
-- [ ] 🎨 Follow instructor's formatting and content guidelines  
-- [ ] ➕ Add project-specific sections as necessary  
-- [ ] 🔍 Proofread for clarity, grammar, and technical accuracy  
-- [ ] ⬆️ Upload PDF report, presentation slides, and code  
-- [ ] 🧩 Ensure all code is properly documented with comments and docstrings  
-- [ ] 🔗 Verify all links and references work correctly
-
----
-
-*Mẫu cập nhật lần cuối: 🗓️ Tháng 7/2025*
 
