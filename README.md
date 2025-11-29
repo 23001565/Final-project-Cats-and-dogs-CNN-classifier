@@ -51,11 +51,13 @@ This project addresses these challenges by exploring how techniques like SimCLR 
 
 ### Chapter 3: Results & Analysis
 **📊 Results & Discussion**
-   - 📈 Main findings, performance metrics, and analysis
+   Experimental results show that a MobileNetV2 student trained purely via knowledge distillation reaches — and sometimes exceeds — the performance of one initialized with SimCLR pretraining, while requiring significantly less training time.
 
 ### Chapter 4: Conclusion
 **✅ Conclusion & Future Work**
    - 🔭 Summary of contributions and suggestions for improvement
+   - Contributions: demonstrate the effectiveness of the lightweight CNN model MobileNetV2 and the 2 training techniques, how they enhance model performance under constrained environment.
+   - Further experiments: Hyperparameter Tuning, Model Variations, Richer Distillation, Adaptivity.
 
 ### References & Appendices
 **📚 References**
@@ -67,4 +69,5 @@ This project addresses these challenges by exploring how techniques like SimCLR 
 
 
 ---
+
 
