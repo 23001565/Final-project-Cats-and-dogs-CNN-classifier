@@ -7,8 +7,8 @@
 * **🏫 Institution:** VNU-HUS (Vietnam National University - Hanoi University of Science)  
 * **📝 Project Title:** CNN for Cat–Dog Classification  
 * **📅 Submission Date:** 30/11/2025  
-* **📄 PDF Report:** 📄 [Link to the PDF report in this repository]  
-* **🖥️ Presentation Slides:** 🖥️ [Link to the presentation slides in this repository]  
+* **📄 PDF Report:** 📄 [Report](./Report.pdf)
+* **🖥️ Presentation Slides:** 🖥️ [Slide](./AISLide.pdf)
 * **📂 Repository:** https://drive.google.com/drive/folders/1eoQ2REdIvF-qhs9Ozx2E0LV29fD3ZTvc?usp=drive_link
 
 **👥 Team Members:**
@@ -69,5 +69,6 @@ This project addresses these challenges by exploring how techniques like SimCLR 
 
 
 ---
+
 
 
