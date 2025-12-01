@@ -24,7 +24,7 @@ The `notebooks/` folder contains all project notebooks for the Cats vs Dogs CNN 
    - Evaluates the trained models on the test set (5,000 samples).
    - Reports accuracy, precision, recall, and other metrics.
 
-5. **05_Visualize-effects-of-libs-and-models.ipynb**
+5. **Visualize-effects-of-libs-and-models.ipynb**
    - Shows the architectures of MobileNetV2 and ResNet50.
    - Visualizes SimCLR augmentations using the Lightly module.
    - Compares feature maps learned by MobileNetV2 and ResNet50.
@@ -41,3 +41,34 @@ Click the links below to open and run the notebooks directly in Colab:
 or access via the drive folder:
    [drive link](https://drive.google.com/drive/folders/1eoQ2REdIvF-qhs9Ozx2E0LV29fD3ZTvc?usp=drive_link)
    
+## Notes on Checkpoints (“mods” folder in the project drive)
+
+I renamed some checkpoint files for consistency.  
+(This may cause a few `save_path` entries in **SimCLR_training_results.ipynb** to be outdated,  
+but all other notebooks should remain unaffected.)
+
+### SimCLR Pretraining
+Filename format:
+`mobilenet_sim_<train-set-size>_<extra-tag>.pth`
+
+**extra-tag options:**
+- `"epoch"` — periodic checkpoint saves  
+- `"cont"` or *empty* — best checkpoints  
+  *(Some training runs were interrupted and later resumed; resumed best checkpoints are marked with `"cont"`. Treat them as the final best checkpoints.)*
+
+Note:  
+The checkpoints referenced in the report (see **Testing_models_results.ipynb** for exact selections)   
+are not always the *final* best checkpoints.  
+In some cases, earlier checkpoints achieved similar overall accuracy but showed **better per-class and among-class balance**  
+in metrics such as precision and recall.
+
+### Finetuning for SimCLR
+Filename format:  
+`student_finetuned_<train-set-size>_<extra-tag>.pth`
+
+### Knowledge Distillation
+- Teacher (fine-tuned on task-specific data):  only one checkpoint
+  `resnet_finetune_only.pth`
+- Students:  
+  `only_distilled_student_<train-set-size>_<extra-tag>.pth`
+
